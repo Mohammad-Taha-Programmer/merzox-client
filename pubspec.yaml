@@ -1,5 +1,5 @@
-name: development
-description: "A new Flutter project."
+name: merzox
+description: "Merzox is an e-commerce application that is intended to group both businesses and their customers in the same place. In Merzox, you can explore businesses actions, prices, offers, products and services, and initiate purchase orders."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -21,19 +21,12 @@ version: 1.0.0+1
 environment:
   sdk: ^3.13.3
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
     sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.8
 
 dev_dependencies:
   flutter_test:
@@ -46,9 +39,16 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^6.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
+flutter_native_splash:
+  background_image: assets/images/logo_background.png
+  image: assets/images/MERZOX_LOGO.png
+  android_12:
+    color: "#FFFFFF"
+    image: assets/images/MERZOX_LOGO.png
+  android: true
+  ios: true
+  web: true
+  fullscreen: true
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -58,9 +58,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/logo_background.png
+    - assets/images/MERZOX_LOGO.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

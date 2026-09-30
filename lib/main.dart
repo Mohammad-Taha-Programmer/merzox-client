@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:development/Screens/home.dart';
+import 'package:merzox/Screens/home.dart';
 
 void main() => runApp(const Merzox());
 
